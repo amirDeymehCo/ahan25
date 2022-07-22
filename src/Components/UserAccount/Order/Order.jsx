@@ -24,7 +24,7 @@ import {
 import moment from "moment-jalaali";
 import { useSelector } from "react-redux";
 
-const Order = () => {
+const OrderSection = () => {
   const [dataOrder, setDataOrder] = useState([]);
   const { token } = useSelector((state) => state.profileUser);
 
@@ -120,4 +120,4 @@ const Order = () => {
   );
 };
 
-export default Order;
+export default OrderSection;

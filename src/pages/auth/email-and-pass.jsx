@@ -1,4 +1,4 @@
-import Footer from "../../components/home/Footer/Footer";
+import Footer from "../../Components/common/Footer/Footer";
 import Navbar from "../../components/layout/navabar";
 import EmailAndPass from "../../components/modals/auth/email-and-pass";
 
