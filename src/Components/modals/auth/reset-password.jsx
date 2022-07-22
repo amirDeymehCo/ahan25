@@ -4,12 +4,12 @@ import RightBarIcon from "./common/right-bar-icon";
 import ModalTitle from "./common/title";
 import { useState, useEffect } from "react";
 import ModalFooter from "./common/footer";
-import PassField from "./../../common/pass-field";
+import PassField from "../../common/pass-field";
 import { useSelector } from "react-redux";
 import { selectUserEmail } from "../../../redux/slices/user";
 import ModalAlert from "./common/alert";
-import Input from "./../../common/input";
-import axiosInstance from './../../../utils/axios';
+import Input from "../../common/input";
+import axiosInstance from "./../../../utils/axios";
 
 export default function ResetPassword({ isPage }) {
   const userEmail = useSelector((state) => selectUserEmail(state));

@@ -1,5 +1,5 @@
-import SingleProductCo from "./../../components/SingleProduct/SingleProduct";
-import SingleProductApi from "./../../Services/Products/Products";
+import SingleProductCo from "../../components/SingleProduct/SingleProduct";
+import SingleProductApi from "../../Services/Products/Products";
 import Error from "next/error";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

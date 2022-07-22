@@ -1,5 +1,5 @@
-import TitleSection from "./../../common/TitleSection/TitleSection";
-import InputGroup from "./../../common/InputGroup/InputGroup";
+import TitleSection from "../../common/TitleSection/TitleSection";
+import InputGroup from "../../common/InputGroup/InputGroup";
 import {
   SectionOnline,
   Container,

@@ -1,4 +1,4 @@
-import TitleSection from "./../../common/TitleSection/TitleSection";
+import TitleSection from "../../common/TitleSection/TitleSection";
 import {
   Container,
   FormBank,
@@ -6,8 +6,8 @@ import {
   Upload,
   ImageBg,
 } from "./BankPaymentStyles";
-import InputGroup from "./../../common/InputGroup/InputGroup";
-import TextareaGroup from "./../../common/InputGroup/Textarea";
+import InputGroup from "../../common/InputGroup/InputGroup";
+import TextareaGroup from "../../common/InputGroup/Textarea";
 import { useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import OrderServices from "../../../Services/order";

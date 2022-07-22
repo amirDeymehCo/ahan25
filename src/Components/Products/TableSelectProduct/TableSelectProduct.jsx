@@ -8,7 +8,7 @@ import {
   Print,
   RefreshTwo,
   Shear,
-} from "./../../../Icons";
+} from "../../../Icons";
 import {
   BtnHeader,
   DivTextHeader,
@@ -26,7 +26,7 @@ import {
   BoxBox,
   TdMenuDot,
   MenuDotList,
-} from "./../TableProductCompony/TableProductComponyStyles";
+} from "../TableProductCompony/TableProductComponyStyles";
 const data = [{}, {}, {}, {}, {}, {}];
 
 const CahrtSvg = () => (

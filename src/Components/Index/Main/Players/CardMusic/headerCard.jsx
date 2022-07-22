@@ -1,4 +1,4 @@
-import image1 from "./../1.jpg";
+import image1 from "../1.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
   ProgressTime,
@@ -10,7 +10,7 @@ import {
   FooterHeaderCardPlayer,
   DivTextTimeMusic,
   DivProgressMusic,
-} from "./../PlayerStyles";
+} from "../PlayerStyles";
 import {
   BackMusic,
   Comment,

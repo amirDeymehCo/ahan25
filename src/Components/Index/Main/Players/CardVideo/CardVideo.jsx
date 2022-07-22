@@ -2,7 +2,7 @@ import BtnShow from "../../../../common/BtnShow/BtnShow";
 import HeaderCard from "./HeaderCard";
 import ListPlayers from "../ListPlayers";
 import { MusicCard, TitleCardPlayer } from "../PlayerStyles";
-import { CardPlayer } from "./../PlayerStyles";
+import { CardPlayer } from "../PlayerStyles";
 import { VideoPlayer } from "../../../../Icons/Icons";
 
 const CardVideo = () => {

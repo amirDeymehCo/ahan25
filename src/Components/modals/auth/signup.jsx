@@ -2,16 +2,16 @@ import styled from "styled-components";
 import ModalWrapper from "../../common/modal-wrapper";
 import RightBarIcon from "./common/right-bar-icon";
 import ModalTitle from "./common/title";
-import Input from "./../../common/input";
+import Input from "../../common/input";
 import { useEffect, useState } from "react";
 import ModalFooter from "./common/footer";
 import { fontsTheme, typeScale } from "../../../styles/global";
 import http from "../../../utils/axios";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUserPhone, setUserPhone } from "./../../../redux/slices/user";
+import { selectUserPhone, setUserPhone } from "../../../redux/slices/user";
 import { useRouter } from "next/router";
 import ModalAlert from "./common/alert";
-import { validatePhone } from './../../../utils/validation';
+import { validatePhone } from "./../../../utils/validation";
 
 export default function SignupModal({ isPage }) {
   const router = useRouter();
@@ -43,7 +43,14 @@ export default function SignupModal({ isPage }) {
 
       dispatch(setUserPhone(phone));
 
-      router.push({ pathname: router.pathname, query: { modal: "confirmation-code", sender: "signup" } }, undefined, { shallow: true });
+      router.push(
+        {
+          pathname: router.pathname,
+          query: { modal: "confirmation-code", sender: "signup" },
+        },
+        undefined,
+        { shallow: true }
+      );
     } catch (error) {
       setAlert({
         style: "error",

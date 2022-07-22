@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CommentsServices from "./../../../../Services/commentsServices";
+import CommentsServices from "../../../../Services/commentsServices";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TitleSection from "../../../Common/TitleSection/TitleSection";

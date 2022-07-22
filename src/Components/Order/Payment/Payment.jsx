@@ -1,4 +1,4 @@
-import TitleSection from "./../../common/TitleSection/TitleSection";
+import TitleSection from "../../common/TitleSection/TitleSection";
 import TablePayments from "./TablePayment";
 import CardResult from "./CardResult";
 import { SectionPayment, Content } from "./PaymentStyles";

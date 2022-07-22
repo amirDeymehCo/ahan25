@@ -2,17 +2,17 @@ import styled from "styled-components";
 import ModalWrapper from "../../common/modal-wrapper";
 import RightBarIcon from "./common/right-bar-icon";
 import ModalTitle from "./common/title";
-import Input from "./../../common/input";
+import Input from "../../common/input";
 import { useEffect, useState } from "react";
 import ModalFooter from "./common/footer";
 import ModalAlert from "./common/alert";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUserPhone, setUserPhone } from "./../../../redux/slices/user";
-import { validatePhone } from "./../../../utils/validation";
+import { selectUserPhone, setUserPhone } from "../../../redux/slices/user";
+import { validatePhone } from "../../../utils/validation";
 import axiosInstance from "../../../utils/axios";
-import PrivateRoute from "./../../common/private-route";
-import LoginServices from "./../../../Services/Login/LoginServices";
+import PrivateRoute from "../../common/private-route";
+import LoginServices from "../../../Services/Login/LoginServices";
 
 function LoginModal({ isPage }) {
   const router = useRouter();

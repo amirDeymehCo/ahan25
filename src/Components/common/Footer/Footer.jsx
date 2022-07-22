@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Get } from "./../../../utils/axiosHelper/AxiosHelper";
+import { Get } from "../../../utils/axiosHelper/AxiosHelper";
 import { ArrowTop, Email, Location, Mobile, Twitter } from "../../Icons/Icons";
 import {
   Col4,

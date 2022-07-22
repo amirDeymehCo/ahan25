@@ -1,5 +1,5 @@
 import { BoxFilterStyle, ListFilters } from "./SideBarStyles";
-import { ArrowTop } from "./../../Icons/Icons";
+import { ArrowTop } from "../../Icons/Icons";
 import { useState } from "react";
 
 const SelectBoxCo = ({ dataList, setSelectFilter, selectFilter, index }) => {

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import jwtDecode from "jwt-decode";
-import axiosInstance from "./../../utils/axios";
-import { validateJWT } from './../../utils/validation';
+import axiosInstance from "../../utils/axios";
+import { validateJWT } from "./../../utils/validation";
 
 const tokenKey = "token";
 
@@ -110,7 +110,7 @@ export const setJwtFromCache = () => (dispatch) => {
 };
 
 export const loginWithJWT = (jwt) => (dispatch) => {
-  if(!validateJWT(jwt)) return;
+  if (!validateJWT(jwt)) return;
 
   return dispatch({
     type: loggedInWithJWT.type,

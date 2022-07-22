@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { device, primary } from "../../styles/global";
 import { neutral } from "../../styles/global/color";
-import Exit from "./../../assets/exit.svg";
+import Exit from "../../assets/exit.svg";
 import { useRouter } from "next/router";
 import PrivateRoute from "./private-route";
 

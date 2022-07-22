@@ -7,13 +7,12 @@ import {
   BtnClose,
   Cover,
 } from "./AccountLayoutStyles";
-import image1 from "./../../components/Index/Main/Question/1.jpg";
 import {
   Close,
   LikeFolder,
   Tikt,
   UserNote,
-} from "./../../components/Icons/Icons";
+} from "../../Components/Icons/Icons";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -74,7 +73,7 @@ const AccountSideBar = () => {
         </BtnClose>
         <div className="box">
           <HeaderSideBar>
-            <Image width={80} height={80} src={image1} alt="name user" />
+            <Image width={80} height={80} src="/images/1.jpg" alt="name user" />
             <div>
               {profile.name !== null && <h2>{profile.name}</h2>}
               <span>{profile.phone}</span>

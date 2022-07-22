@@ -1,8 +1,8 @@
-import { Container } from "./../../components/Post/PostPageStyles";
-import HeaderPagePost from "./../../components/Post/HeaderPagePost/HeaderPagePost";
-import MainPagePost from "./../../components/Post/MainPagePost/MainPagePost";
-import CommentsPost from "./../../components/Post/CommentsPost/CommentsPost";
-import PostsServices from "./../../Services/Posts/Posts";
+import { Container } from "../../components/Post/PostPageStyles";
+import HeaderPagePost from "../../components/Post/HeaderPagePost/HeaderPagePost";
+import MainPagePost from "../../components/Post/MainPagePost/MainPagePost";
+import CommentsPost from "../../components/Post/CommentsPost/CommentsPost";
+import PostsServices from "../../Services/Posts/Posts";
 import Error from "next/error";
 
 const SinglePost = ({ postData }) => {
@@ -12,7 +12,7 @@ const SinglePost = ({ postData }) => {
     );
   }
 
-  console.log(postData)
+  console.log(postData);
 
   const resultData = postData.result;
 

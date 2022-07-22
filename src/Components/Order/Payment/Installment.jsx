@@ -1,5 +1,5 @@
 import { InstallmentStyle } from "./PaymentStyles";
-import InputGroup from "./../../common/InputGroup/InputGroup";
+import InputGroup from "../../common/InputGroup/InputGroup";
 const Installment = ({ setStep1, setStep2 }) => {
   return (
     <InstallmentStyle>

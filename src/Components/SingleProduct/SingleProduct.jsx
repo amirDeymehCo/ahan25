@@ -15,10 +15,10 @@ import {
 } from "./SingleProductStyles";
 import SideBar from "./SideBar/SideBar";
 import { CardPlus, QuestionIcon, Star, TirAhan } from "../Icons/Icons";
-import { Shear } from "./../Icons/Icons";
+import { Shear } from "../Icons/Icons";
 import { range } from "lodash";
 import Image from "next/image";
-import OrderServices from "./../../Services/auth/Order/orderServices";
+import OrderServices from "../../Services/auth/Order/orderServices";
 import { AddHeader } from "../../utils/axiosHelper/AxiosHelper";
 import jwt_decode from "jwt-decode";
 import { useSelector } from "react-redux";

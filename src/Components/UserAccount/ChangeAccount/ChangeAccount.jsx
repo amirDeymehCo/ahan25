@@ -1,10 +1,10 @@
-import InputGroup from "./../../common/InputGroup/InputGroup";
-import TextareaGroup from "./../../common/InputGroup/Textarea";
+import InputGroup from "../../common/InputGroup/InputGroup";
+import TextareaGroup from "../../common/InputGroup/Textarea";
 import {
   FormChange,
   DivButtonSubmitChange,
   FormAddress,
-  Main
+  Main,
 } from "./ChangeAccountStyles";
 
 const data = [

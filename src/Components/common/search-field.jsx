@@ -1,23 +1,23 @@
 import styled from "styled-components";
 import { neutral, primary, typeScale } from "../../styles/global";
-import SearchIcon from "./../../assets/search.svg"
-import darkTheme from './../../styles/themes/dark-theme';
-import { fontsTheme } from './../../styles/global/typography';
-import { device } from './../../styles/global/size';
+import SearchIcon from "../../assets/search.svg";
+import darkTheme from "./../../styles/themes/dark-theme";
+import { fontsTheme } from "./../../styles/global/typography";
+import { device } from "./../../styles/global/size";
 
 export default function SearchField({ onClick, ...props }) {
   return (
-      <$InputWrapper>
-        <$Input
-          type="text"
-          autoComplete="off"
-          placeholder="عبارت مورد نظر خود را سرچ کنید ..."
-          {...props}
-        />
-        <$Icon onClick={onClick}>
+    <$InputWrapper>
+      <$Input
+        type="text"
+        autoComplete="off"
+        placeholder="عبارت مورد نظر خود را سرچ کنید ..."
+        {...props}
+      />
+      <$Icon onClick={onClick}>
         <SearchIcon />
-        </$Icon>
-      </$InputWrapper>
+      </$Icon>
+    </$InputWrapper>
   );
 }
 
@@ -59,10 +59,9 @@ const $Input = styled.input`
 
   &::placeholder {
     color: ${neutral[300]};
-  font-size: ${typeScale.header4};
+    font-size: ${typeScale.header4};
   }
 
-  
   @media ${device.mobileM} {
     padding: 1rem 5rem 1rem 2rem;
   }

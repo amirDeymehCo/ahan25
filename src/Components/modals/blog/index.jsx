@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import Image from "next/image";
 import { primary, typeScale } from "../../../styles/global";
-import PageModalWrapper from "./../../common/page-modal-wrapper";
-import { neutral } from "./../../../styles/global/color";
-import { fontsTheme } from "./../../../styles/global/typography";
-import { device } from "./../../../styles/global/size";
-import SearchField from "./../../common/search-field";
+import PageModalWrapper from "../../common/page-modal-wrapper";
+import { neutral } from "../../../styles/global/color";
+import { fontsTheme } from "../../../styles/global/typography";
+import { device } from "../../../styles/global/size";
+import SearchField from "../../common/search-field";
 import darkTheme from "../../../styles/themes/dark-theme";
-import NPIronImage from "./../../../assets/Blogposts/newest.jpg";
-import PostImage from "./../../../assets/Blogposts/metal-cutting.jpg";
+import NPIronImage from "../../../assets/Blogposts/newest.jpg";
+import PostImage from "../../../assets/Blogposts/metal-cutting.jpg";
 import { useState } from "react";
 import { useEffect } from "react";
 import PostsServices from "../../../Services/Posts/Posts";
@@ -61,7 +61,11 @@ export default function Blog({ isPage }) {
   return (
     <PageModalWrapper name="blog" isPage={isPage}>
       <$WidgetTitle center>به وبلاگ ما خوش آمدید</$WidgetTitle>
-      <$WidgetSubTitle center>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و  </$WidgetSubTitle>
+      <$WidgetSubTitle center>
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و لورم ایپسوم
+        متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و لورم ایپسوم متن ساختگی
+        با تولید سادگی نامفهوم از صنعت چاپ و{" "}
+      </$WidgetSubTitle>
       <$Wrapper>
         <$Sidebar>
           <$Widget>
@@ -112,15 +116,28 @@ export default function Blog({ isPage }) {
                 <$PosterImage src={PostImage} layout="fill" />
                 <$ImageOverlay />
                 <$PosterContent>
-                  <$PosterTitle> ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم</$PosterTitle>
-                  <$PosterDescription>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم چاپ و بااستفاده لورم ایپسوم متن ساختگی با تولید سادگیلورم ایپسوم متن ساختگی با تولید سادگی نامفه</$PosterDescription>
+                  <$PosterTitle>
+                    {" "}
+                    ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم
+                  </$PosterTitle>
+                  <$PosterDescription>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                    صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با تولید سادگی
+                    نامفهوم از صنعت لورم ایپسوم متن ساختگی با تولید سادگی
+                    نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن ساختگی با
+                    تولید سادگی نامفهوم از صنعت چاپ و با استفاده لورم ایپسوم متن
+                    ساختگی با تولید سادگی نامفهوم چاپ و بااستفاده لورم ایپسوم
+                    متن ساختگی با تولید سادگیلورم ایپسوم متن ساختگی با تولید
+                    سادگی نامفه
+                  </$PosterDescription>
                 </$PosterContent>
               </$PosterImageWrapper>
             </$Poster>
           </$PosterWidget>
           <$posts>
-            {['a', 'b', 'c', 'd'].map((item, index) => (
-                <Post key={index}/>
+            {["a", "b", "c", "d"].map((item, index) => (
+              <Post key={index} />
             ))}
           </$posts>
         </$Main>
@@ -158,9 +175,7 @@ const $Sidebar = styled.aside`
   }
 `;
 
-const $Main = styled.main`
-
-`;
+const $Main = styled.main``;
 const $PosterWidget = styled.section`
   width: 100%;
   //height: 30%;
@@ -197,7 +212,7 @@ const $PosterContent = styled.div`
   position: absolute;
   top: 60%;
   text-align: right;
-  padding:23px 25px;
+  padding: 23px 25px;
 
   @media ${device.mobileL} {
     width: 100%;
@@ -241,7 +256,7 @@ const $WidgetTitle = styled.h2`
   font-weight: 800;
   font-size: ${typeScale.header2};
   margin-bottom: 2.2rem;
-  text-align: ${props => props.center ? 'center' : 'left'};
+  text-align: ${(props) => (props.center ? "center" : "left")};
 `;
 const $WidgetSubTitle = styled.p`
   color: ${neutral[200]};
@@ -249,7 +264,7 @@ const $WidgetSubTitle = styled.p`
   font-weight: 300;
   font-size: ${typeScale.paragraph};
   margin-bottom: 2.2rem;
-  text-align: ${props => props.center ? 'center' : 'left'};
+  text-align: ${(props) => (props.center ? "center" : "left")};
   line-height: 21.7px;
 `;
 
@@ -297,12 +312,12 @@ const $NewestPost = styled.li`
 
   @media ${device.mobileL} {
     flex-direction: column;
-  gap: 1.5rem;
+    gap: 1.5rem;
   }
 
   @media ${device.mobileM} {
     flex-direction: row;
-  gap: 2rem;
+    gap: 2rem;
   }
 `;
 
@@ -314,7 +329,7 @@ const $NPImageWrapper = styled.div`
   border-radius: 1.5rem;
 
   @media ${device.mobileL} {
-  width: 100%;
+    width: 100%;
   }
 `;
 
@@ -333,7 +348,7 @@ const $NPContent = styled.div`
   text-align: center;
 
   @media ${device.mobileL} {
-  width: 100%;
+    width: 100%;
   }
 `;
 
@@ -377,7 +392,7 @@ const $BadgeWrapper = styled.div`
 `;
 
 const $Badge = styled.div`
-padding: .7rem 1.4rem;
-background: ${primary[300]};
-border-radius: .3rem;
+  padding: 0.7rem 1.4rem;
+  background: ${primary[300]};
+  border-radius: 0.3rem;
 `;

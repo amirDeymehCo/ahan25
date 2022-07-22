@@ -8,7 +8,7 @@ import ModalFooter from "./common/footer";
 import PassField from "../../common/pass-field";
 import { useRouter } from "next/router";
 import ModalAlert from "./common/alert";
-import axiosInstance from "./../../../utils/axios";
+import axiosInstance from "../../../utils/axios";
 import { validateEmail } from "../../../utils/validation";
 import { useDispatch } from "react-redux";
 import { setUserEmail } from "../../../redux/slices/user";

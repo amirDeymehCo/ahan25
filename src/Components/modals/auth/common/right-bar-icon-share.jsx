@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { typeScale } from "../../../../styles/global";
 import { fontsTheme } from "../../../../styles/global/typography";
-import Share from "./../../../../assets/share.svg";
+import Share from "../../../../assets/share.svg";
 
 /**
  * the Key And Circle Icon In Auth Modals

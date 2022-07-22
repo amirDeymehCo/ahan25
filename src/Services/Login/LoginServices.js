@@ -1,8 +1,8 @@
-import { Post } from "./../../utils/axiosHelper/AxiosHelper";
+import { Post } from "../../utils/axiosHelper/AxiosHelper";
 
 const api = {
   loginCode: "/front/user/loginCode",
-  configCode : "/front/user/login"
+  configCode: "/front/user/login",
 };
 
 const LoginServices = {

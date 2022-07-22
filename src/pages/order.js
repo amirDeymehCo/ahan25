@@ -1,4 +1,4 @@
-import MainOrders from "./../components/Order/Main";
+import MainOrders from "../components/Order/Main";
 
 const Order = () => {
   return <MainOrders></MainOrders>;

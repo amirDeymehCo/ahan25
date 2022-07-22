@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { SideBarStyles, HeaderSideBar, Mark } from "./SideBarStyles";
-import { Like } from "./../../Icons/Icons";
+import { Like } from "../../Icons/Icons";
 import BodySideBarCo from "./bodySideBar";
-import FavoritesServices from "./../../../Services/auth/favorites/favorites";
+import FavoritesServices from "../../../Services/auth/favorites/favorites";
 import { AddHeader } from "../../../utils/axiosHelper/AxiosHelper";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";

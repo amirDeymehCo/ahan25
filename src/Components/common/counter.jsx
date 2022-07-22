@@ -2,8 +2,8 @@ import { Button, ButtonGroup, TextField } from "@mui/material";
 import styled from "styled-components";
 import { device, fontsTheme, primary } from "../../styles/global";
 import darkTheme from "../../styles/themes/dark-theme";
-import SubtractIcon from "./../../assets/subtract.svg";
-import PlusIcon from "./../../assets/plus.svg";
+import SubtractIcon from "../../assets/subtract.svg";
+import PlusIcon from "../../assets/plus.svg";
 
 /**
  * @param {int} value
@@ -12,8 +12,8 @@ import PlusIcon from "./../../assets/plus.svg";
 export default function Counter({ value, onChange }) {
   return (
     <$ButtonGroup variant="contained" dir="ltr" disableElevation>
-      <$Increment onClick={() => onChange(++value)} >
-        <PlusIcon/>
+      <$Increment onClick={() => onChange(++value)}>
+        <PlusIcon />
       </$Increment>
       <$TextField
         type="text"
@@ -24,8 +24,8 @@ export default function Counter({ value, onChange }) {
         }}
         onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
       />
-      <$Decrement onClick={() => onChange(value > 1 ? --value : value)} >
-        <SubtractIcon/>
+      <$Decrement onClick={() => onChange(value > 1 ? --value : value)}>
+        <SubtractIcon />
       </$Decrement>
     </$ButtonGroup>
   );
@@ -43,7 +43,7 @@ const $Increment = styled(Button)`
   &&& {
     width: 6.3rem;
     height: 5.8rem;
-    padding: .6rem 1.6rem;
+    padding: 0.6rem 1.6rem;
 
     background: ${primary[300]};
     border: 0.1rem solid #5d6f94;
@@ -52,7 +52,6 @@ const $Increment = styled(Button)`
     backdrop-filter: blur(1rem);
 
     border-radius: 1rem;
-
   }
 `;
 
@@ -60,7 +59,7 @@ const $Decrement = styled(Button)`
   &&& {
     width: 6.3rem;
     height: 5.8rem;
-    padding: .6rem 1.6rem;
+    padding: 0.6rem 1.6rem;
 
     background: transparent;
     border: 1px solid #5d6f94;

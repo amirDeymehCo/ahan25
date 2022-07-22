@@ -10,7 +10,7 @@ import {
   SharePlayer,
 } from "../PlayerStyles";
 import { useEffect, useRef, useState } from "react";
-import { HeaderCardPlayer } from "./../PlayerStyles";
+import { HeaderCardPlayer } from "../PlayerStyles";
 import {
   BackMusic,
   Comment,

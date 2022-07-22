@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device, neutral, primary } from "../../../../styles/global";
 import darkTheme from "../../../../styles/themes/dark-theme";
-import ShareIcon from "./../../../../assets/share.svg";
+import ShareIcon from "../../../../assets/share.svg";
 import { useState } from "react";
 import Link from "next/link";
 

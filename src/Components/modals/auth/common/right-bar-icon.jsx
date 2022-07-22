@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { neutral, typeScale } from "../../../../styles/global";
-import KeySvg from "./../../../../assets/key.svg";
+import KeySvg from "../../../../assets/key.svg";
 import { fontsTheme } from "../../../../styles/global/typography";
-import EhsanMetalSVG from "./../../../../assets/ehsan-metal.svg";
+import EhsanMetalSVG from "../../../../assets/ehsan-metal.svg";
 
 /**
  * the Key And Circle Icon In Auth Modals

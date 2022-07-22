@@ -1,7 +1,7 @@
 import { Alert } from "@mui/material";
 import { styled as muiStyled } from "@mui/system";
-import { fontsTheme } from './../../../../styles/global/typography';
-import { typeScale } from './../../../../styles/global/';
+import { fontsTheme } from "../../../../styles/global/typography";
+import { typeScale } from "../../../../styles/global/";
 
 /**
  * @param {object} alert - {style, text}

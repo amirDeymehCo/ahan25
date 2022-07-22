@@ -9,14 +9,14 @@ import {
   Tag,
   BoxPostMenu,
 } from "./HeaderPagePostStyles";
-import { Shear } from "./../../Icons/Icons";
-import image1 from "./../1.jpg";
+import { Shear } from "../../Icons/Icons";
+import image1 from "../1.jpg";
 import Image from "next/image";
 import moment from "moment-jalaali";
 import MenuListPosts from "./MenuListPost";
 
-const HeaderPagePost = ({ date, description, tags, _id,writer,image }) => {
-  const url = `https://metalbackend.ryt-service.ir/uploads/thumbnails/${image}`
+const HeaderPagePost = ({ date, description, tags, _id, writer, image }) => {
+  const url = `https://metalbackend.ryt-service.ir/uploads/thumbnails/${image}`;
   return (
     <>
       <CoverPostStyles>
@@ -38,7 +38,7 @@ const HeaderPagePost = ({ date, description, tags, _id,writer,image }) => {
         <Image
           className="cover-post"
           layout="fill"
-          loader={({src})=>src}
+          loader={({ src }) => src}
           src={url}
           alt="name posts"
         />

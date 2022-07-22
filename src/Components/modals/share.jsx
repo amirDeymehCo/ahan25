@@ -12,9 +12,9 @@ import {
 import ModalWrapper from "../common/modal-wrapper";
 import ModalTitle from "./auth/common/title";
 import RightBarIconShare from "./auth/common/right-bar-icon-share";
-import TwitterImg from "./../../assets/twitter-share.svg";
-import WhatsappImg from "./../../assets/whatsapp-share.svg";
-import LinkImg from "./../../assets/link.svg";
+import TwitterImg from "../../assets/twitter-share.svg";
+import WhatsappImg from "../../assets/whatsapp-share.svg";
+import LinkImg from "../../assets/link.svg";
 
 export default function ShareModal() {
   const {

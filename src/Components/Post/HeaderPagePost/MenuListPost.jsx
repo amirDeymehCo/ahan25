@@ -3,9 +3,9 @@ import {
   BoxPostMenu,
   DivImageMP,
 } from "./HeaderPagePostStyles";
-import image1 from "./../1.jpg";
+import image1 from "../1.jpg";
 import { useEffect, useState } from "react";
-import PostsServices from "./../../../Services/Posts/Posts";
+import PostsServices from "../../../Services/Posts/Posts";
 import Image from "next/image";
 import Link from "next/link";
 

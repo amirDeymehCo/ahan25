@@ -1,6 +1,6 @@
 import BtnShow from "../../../../common/BtnShow/BtnShow";
 import { useRef } from "react";
-import { CardPlayer, MusicCard, TitleCardPlayer } from "./../PlayerStyles";
+import { CardPlayer, MusicCard, TitleCardPlayer } from "../PlayerStyles";
 import HeaderCard from "./headerCard";
 import ListPlayers from "../ListPlayers";
 import { Voice } from "../../../../Icons/Icons";

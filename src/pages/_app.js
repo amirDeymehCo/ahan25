@@ -4,12 +4,12 @@ import darkTheme from "../styles/themes/dark-theme";
 import { useState } from "react";
 import { GlobalStyle } from "../styles/global/global";
 import { wrapper } from "../redux/store";
-import ModalContainer from "../components/modals/container";
+import ModalContainer from "../Components/modals/container";
 import { useDispatch, useSelector } from "react-redux";
 import { setJwtFromCache } from "../redux/slices/user";
 import { useEffect } from "react";
-import "./../styles/ReactToastify.css";
-import ProfileServices from "./../Services/auth/profile";
+import "../styles/ReactToastify.css";
+import ProfileServices from "../Services/auth/profile";
 import { AddHeader } from "../utils/axiosHelper/AxiosHelper";
 import { loadedProfile } from "../redux/slices/profileSlice";
 

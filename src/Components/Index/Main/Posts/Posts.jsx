@@ -1,4 +1,4 @@
-import TitleSection from "./../../../Common/TitleSection/TitleSection";
+import TitleSection from "../../../Common/TitleSection/TitleSection";
 import { Section } from "./PostsStyles";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
@@ -13,7 +13,7 @@ const Posts = () => {
   useEffect(() => {
     PostsServices.getListPosts((res) => {
       if (res.code === 200) {
-        console.log(res)
+        console.log(res);
         setDataPosts(res.result);
       }
     });

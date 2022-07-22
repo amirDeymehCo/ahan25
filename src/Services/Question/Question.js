@@ -1,12 +1,11 @@
-
-import { Get } from './../../utils/axiosHelper/AxiosHelper';
+import { Get } from "../../utils/axiosHelper/AxiosHelper";
 
 const api = {
-    listQuestion : '/front/faqs'
-}
+  listQuestion: "/front/faqs",
+};
 
 const QuestionServices = {
-    listQuestion :(then)=> Get(api.listQuestion,{},then)
-}
+  listQuestion: (then) => Get(api.listQuestion, {}, then),
+};
 
 export default QuestionServices;

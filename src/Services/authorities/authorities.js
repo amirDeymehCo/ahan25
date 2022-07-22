@@ -1,11 +1,10 @@
-
-import { Get } from './../../utils/axiosHelper/AxiosHelper';
+import { Get } from "../../utils/axiosHelper/AxiosHelper";
 const api = {
-    getListAuthorities : "/front/authorities"
-}
+  getListAuthorities: "/front/authorities",
+};
 
 const Authorities = {
-    getListAuthorities:(then)=>Get(api.getListAuthorities,{}, then)
-}
+  getListAuthorities: (then) => Get(api.getListAuthorities, {}, then),
+};
 
 export default Authorities;

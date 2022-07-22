@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import OrderServices from "./../../../Services/auth/Order/orderServices";
-import { AddHeader } from "./../../../utils/axiosHelper/AxiosHelper";
-import { Not } from "./../Favorites/FavoritesStyles";
+import OrderServices from "../../../Services/auth/Order/orderServices";
+import { AddHeader } from "../../../utils/axiosHelper/AxiosHelper";
+import { Not } from "../Favorites/FavoritesStyles";
 import Link from "next/link";
 import {
   Container,
@@ -20,7 +20,7 @@ import {
   ArrowRight,
   ArrowTop,
   SearchIcon,
-} from "./../../Icons/Icons";
+} from "../../Icons/Icons";
 import moment from "moment-jalaali";
 import { useSelector } from "react-redux";
 

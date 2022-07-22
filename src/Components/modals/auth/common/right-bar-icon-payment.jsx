@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { device, typeScale } from "../../../../styles/global";
 import { fontsTheme } from "../../../../styles/global/typography";
-import Bubble from "./../../../../assets/bubble.svg";
-import CreditCardSuccess from "./../../../../assets/credit-card-success.svg";
-import CreditCardFailed from "./../../../../assets/credit-card-failed.svg";
+import Bubble from "../../../../assets/bubble.svg";
+import CreditCardSuccess from "../../../../assets/credit-card-success.svg";
+import CreditCardFailed from "../../../../assets/credit-card-failed.svg";
 
 /**
  * the Key And Circle Icon In Auth Modals

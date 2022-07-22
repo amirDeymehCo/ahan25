@@ -6,10 +6,10 @@ import {
   success,
   fontsTheme,
   typeScale,
-} from "./../../../styles/global";
-import LikeIcon from "./../../../assets/facebook-like.svg";
-import AddShopingCartIcon from "./../../../assets/add-shoping-cart.svg";
-import darkTheme from "./../../../styles/themes/dark-theme";
+} from "../../../styles/global";
+import LikeIcon from "../../../assets/facebook-like.svg";
+import AddShopingCartIcon from "../../../assets/add-shoping-cart.svg";
+import darkTheme from "../../../styles/themes/dark-theme";
 import Link from "next/link";
 import Filter from "../../home/Products/singleProduct/filter";
 import ImageSlider from "../../home/Products/singleProduct/image-slider";
@@ -131,7 +131,7 @@ export default function SingleProduct({ isPage }) {
     },
   ];
 
-  async function handleNewComment(e){
+  async function handleNewComment(e) {
     e.preventDefault();
   }
 

@@ -4,7 +4,7 @@ import ModalTitle from "./common/title";
 import ModalDescription from "./common/description";
 import RightBarIconPayment from "./common/right-bar-icon-payment";
 import { device, neutral, secondary, typeScale } from "../../../styles/global";
-import { fontsTheme } from "./../../../styles/global/typography";
+import { fontsTheme } from "../../../styles/global/typography";
 
 export default function OperationSucceed({ isPage }) {
   return (

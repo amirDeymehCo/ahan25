@@ -8,7 +8,7 @@ import {
   typeScale,
 } from "../../../../styles/global";
 import darkTheme from "../../../../styles/themes/dark-theme";
-import ArrowBottomIcon from "./../../../../assets/arrow-bottom.svg";
+import ArrowBottomIcon from "../../../../assets/arrow-bottom.svg";
 import { makeStyles } from "@mui/styles";
 
 export default function ProductFilter({ filters }) {

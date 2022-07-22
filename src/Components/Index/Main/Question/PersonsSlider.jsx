@@ -3,7 +3,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 import CardSliderPerson from "./CardSliderPerson";
 import { LinkShowPerson, SectionRight } from "./QuestionStyles";
 import { useEffect, useState } from "react";
-import Authorities from "./../../../../Services/authorities/authorities";
+import Authorities from "../../../../Services/authorities/authorities";
 
 const PersonsSlider = () => {
   const [dataAuthorities, setDataAuthorities] = useState(false);
@@ -16,7 +16,7 @@ const PersonsSlider = () => {
     });
   }, []);
 
-  console.log(dataAuthorities)
+  console.log(dataAuthorities);
 
   return (
     <SectionRight className="section">

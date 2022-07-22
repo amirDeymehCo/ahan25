@@ -1,5 +1,5 @@
 import { SectionTiming, Times, VectorStatusTime } from "./TimingStyles";
-import { Check } from "./../Payment/PaymentStyles";
+import { Check } from "../Payment/PaymentStyles";
 import VectorStatus from "./vectorStatus";
 import { useSelector } from "react-redux";
 const Timing = () => {

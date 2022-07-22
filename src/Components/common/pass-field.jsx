@@ -1,11 +1,17 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { neutral, primary, typeScale } from "../../styles/global";
-import Hide from "./../../assets/hide.svg";
-import Eye from "./../../assets/eye.svg";
+import Hide from "../../assets/hide.svg";
+import Eye from "../../assets/eye.svg";
 import Link from "next/link";
 
-export default function PassField({ label, name, isPage, forgetPassword, ...rest }) {
+export default function PassField({
+  label,
+  name,
+  isPage,
+  forgetPassword,
+  ...rest
+}) {
   const [security, setSecurity] = useState(true);
 
   return (
@@ -13,7 +19,9 @@ export default function PassField({ label, name, isPage, forgetPassword, ...rest
       <$LabelWrapper>
         <$Label htmlFor={name}>{label} :</$Label>
         {forgetPassword && (
-          <Link href={isPage ? "/auth/forget-password" : "?modal=forgetPassword"}>
+          <Link
+            href={isPage ? "/auth/forget-password" : "?modal=forgetPassword"}
+          >
             <$Text>فراموشی رمز عبور؟</$Text>
           </Link>
         )}

@@ -1,6 +1,6 @@
 import Footer from "../../components/home/Footer/Footer";
 import Navbar from "../../components/layout/navabar";
-import OperationFailed from './../../components/modals/auth/operation-failed';
+import OperationFailed from "../../components/modals/auth/operation-failed";
 
 function Login() {
   return (

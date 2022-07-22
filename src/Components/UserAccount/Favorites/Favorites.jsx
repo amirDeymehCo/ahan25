@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { TirAhan } from "./../../Icons/Icons";
-import BtnShow from "./../../common/BtnShow/BtnShow";
-import FavoritesServices from "./../../../Services/auth/favorites/favorites";
-import { AddHeader } from "./../../../utils/axiosHelper/AxiosHelper";
+import { TirAhan } from "../../Icons/Icons";
+import BtnShow from "../../common/BtnShow/BtnShow";
+import FavoritesServices from "../../../Services/auth/favorites/favorites";
+import { AddHeader } from "../../../utils/axiosHelper/AxiosHelper";
 import Link from "next/link";
 import {
   CardFavorites,

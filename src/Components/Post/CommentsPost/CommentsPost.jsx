@@ -4,12 +4,12 @@ import {
   BodyComment,
   NotComment,
 } from "./CommentsPostStyles";
-import { TimeDate } from "./../../Icons/Icons";
-import image1 from "./../1.jpg";
-import BtnShow from "./../../common/BtnShow/BtnShow";
+import { TimeDate } from "../../Icons/Icons";
+import image1 from "../1.jpg";
+import BtnShow from "../../common/BtnShow/BtnShow";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import CommentsServices from "./../../../Services/commentsServices";
+import CommentsServices from "../../../Services/commentsServices";
 import { AddHeader } from "../../../utils/axiosHelper/AxiosHelper";
 
 const CommentsPost = ({ _id }) => {

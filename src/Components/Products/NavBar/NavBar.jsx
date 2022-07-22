@@ -1,4 +1,4 @@
-import { Milgerd } from "./../../../Icons";
+import { Milgerd } from "../../../Icons";
 import { Item, Nav } from "./NavBarStyles";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
